@@ -1,4 +1,4 @@
-package com.abhayjeet.recyclerview;
+package com.example.recycleview;
 
 import androidx.appcompat.app.AppCompatActivity;
 

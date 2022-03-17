@@ -1,26 +1,47 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="fill_parent"
-    android:layout_height="fill_parent"
-    android:orientation="horizontal">
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    >
 
-    <ImageView
-        android:layout_width="30dp"
-        android:layout_height="30dp"
-        android:layout_margin="10dp"
-        android:id="@+id/img"
-        android:src="@drawable/music1"
-        android:layout_marginLeft="40dp"
-        />
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:id="@+id/r">
 
+        <ImageView
+            android:id="@+id/img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp" />
+
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="150dp"
+            android:layout_marginTop="10dp"
+            android:text="hello"
+            android:textSize="20dp"
+            android:textFontWeight="@integer/material_motion_duration_short_1"
+            android:textColor="@color/teal_200"
+            />
+    </RelativeLayout>
     <TextView
-        android:id="@+id/text1"
         android:layout_width="wrap_content"
-        android:layout_height="30dp"
-        android:layout_marginLeft="100dp"
-        android:layout_marginTop="10dp"
-        android:text="hello"
-        android:textSize="25dp"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/r"
+        android:text="____________________________________"
+        android:layout_marginStart="110dp"
+        android:gravity="center"
+        android:textColor="@color/purple_700"
+        android:textFontWeight="@integer/material_motion_duration_long_2"
+        android:textColorHighlight="@color/black"
         />
 
-</LinearLayout>
+
+</RelativeLayout>

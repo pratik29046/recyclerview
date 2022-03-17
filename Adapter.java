@@ -1,4 +1,4 @@
-package com.abhayjeet.recyclerview;
+package com.example.recycleview;
 
 import android.view.LayoutInflater;
 import android.view.View;
@@ -12,6 +12,8 @@ import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
+
+
 
 public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
 
@@ -46,8 +48,8 @@ public class Adapter extends RecyclerView.Adapter<Adapter.ViewHolder> {
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-       private TextView n1;
-       private ImageView i1;
+        private TextView n1;
+        private ImageView i1;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
